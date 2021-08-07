@@ -3,8 +3,6 @@ import Header from '../../components/header';
 import './home.css';
 import {BiSearchAlt2} from "react-icons/bi";
 import {TiLocation} from "react-icons/ti"
-import {BsArrowRightShort} from "react-icons/bs";
-import {FaUserEdit} from "react-icons/fa";
 
 
 function Home(){
