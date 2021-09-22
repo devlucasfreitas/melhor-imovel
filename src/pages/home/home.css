@@ -26,7 +26,29 @@ header {
 
 .titulo{
     margin:1% 10%;
+    font-size: clamp(.2rem, 2.5rem, 3rem);
 }
+
+.btnFormBusca {
+    display: none;
+    background-color: #506AD4;
+    color: white;
+    margin: 0 auto;
+}
+
+.btnBusca {
+    background-color: #506AD4;
+    color: white;
+}
+
+.boxActive {
+    display: block !important;
+}
+
+.btnOff {
+    background-color: #777d97 !important; 
+}
+
 .formBusca{
     
     text-align: center;
@@ -34,19 +56,17 @@ header {
     margin: 10px;
     padding: 5rem;
     background-color: rgba(196, 196, 196, .7);
-    width: 70%;
+
     
 }
 .formBusca input, select, button{
     margin: .2rem;
     padding: 0.5rem 0.5rem 0.5rem .5rem;
-    background-color: var(--branco);
     border-style:none;
     border-radius: 4px;
     outline: none;
     font-size: 1rem;
 }
-
 
 .informacoes{
     background-color: #FFFCE6;
@@ -85,6 +105,77 @@ header {
 	border: 0;
     border-top: 1px dashed var(--preto);
 }
+
+.bloco-precos {
+    display: flex;
+    flex-direction: row;
+}
+
+.preco-medio {
+    margin: 20px;
+}
+
+.preco-medio h1 {
+    margin: 0 auto;
+    width: fit-content;
+    border: solid 3px #506AD4;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+.cards {
+    height: 250px;
+    width: 350px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 15px;
+    border:  solid 3px #506AD4;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cards:hover {
+    cursor: pointer;
+    transition: .5s;
+    padding: .5%;
+}
+
+.cards h3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #506AD4;
+    color: white;
+    margin: 0;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+.cards h2{
+    width: fit-content;
+    height: fit-content;
+    background-color: #506AD4;
+    color: white;
+    border-bottom-right-radius: 13px;
+    border-top-left-radius: 13px;
+    padding: 5px;
+}
+
+.sp {
+    background-image:url(https://www.euandopelomundo.com/wp-content/uploads/2019/04/sao_paulo.jpg);
+}
+
+.rj {
+    background-image: url(https://super.abril.com.br/wp-content/uploads/2017/12/rio-de-janeiro.png?w=1024);
+}
+
+.pr {
+    background-image: url(https://mid.curitiba.pr.gov.br/2020/destaque/00303353.jpg);
+}
+
 footer{
     box-sizing: border-box;
     width:100%;
@@ -97,3 +188,48 @@ footer{
     background-color: var(--preto);
     color: var(--branco);
 }
+
+
+
+@media screen 
+ and (max-width: 1180px) 
+ and (min-width: 10px)  {
+    .bloco-precos {
+        display: block;
+     }
+
+     .preco-medio {
+         width: fit-content;
+     }
+
+     .cards {
+         width: 90%;
+     }
+}
+
+@media(max-widht: 590px) {
+
+    .formBusca input, select, button {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen 
+ and (max-width: 575px) 
+ and (min-width: 10px) {
+    .selecaoBox {
+        display: none;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .btnFormBusca {
+        display: block;
+    }
+
+    .formBusca {
+        padding: 1rem;
+    }
+
+ }
