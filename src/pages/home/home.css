@@ -1,235 +1,205 @@
 header {
-    background-color: #506AD4;
-    font-weight: 700;
+  background-color: #24a3b1;
+  font-weight: 700;
 }
 
-.Home{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    
-    width: 100%;
-    
-    
+.Home {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  width: 100%;
 }
-.painel{ 
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-image:url("https://images7.alphacoders.com/291/291780.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
+.painel {
+  padding: 5rem;
+  width: 100%;
+  background-image: url(https://i2.wp.com/blogdaengenharia.com/wp-content/uploads/2020/09/2807-scaled.jpg?fit=2560%2C1707&ssl=1);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.titulo{
-    margin:1% 10%;
-    font-size: clamp(.2rem, 2.5rem, 3rem);
+.titulo {
+  color: #312a2a;
+  margin-bottom: 64px;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
-.btnFormBusca {
-    display: none;
-    background-color: #506AD4;
-    color: white;
-    margin: 0 auto;
+select {
+  margin: 4px;
+  padding: 8px;
+  color: #c4c4c4;
+  border: none;
 }
 
 .btnBusca {
-    background-color: #506AD4;
-    color: white;
+  text-transform: uppercase;
+  padding: 8px 22px;
+  background-color: #24a3b1;
+  color: #c4c4c4;
+  border: none;
+}
+
+.btnFormBusca {
+  display: none;
+  background-color: #506ad4;
+  color: white;
+  margin: 0 auto;
 }
 
 .boxActive {
-    display: block !important;
+  display: block !important;
 }
 
 .btnOff {
-    background-color: #777d97 !important; 
+  background-color: #777d97 !important;
 }
 
-.formBusca{
-    
-    text-align: center;
-    border-radius: 3px;
-    margin: 10px;
-    padding: 5rem;
-    background-color: rgba(196, 196, 196, .7);
-
-    
+.informacoes {
+  background-color: #fffce6;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
-.formBusca input, select, button{
-    margin: .2rem;
-    padding: 0.5rem 0.5rem 0.5rem .5rem;
-    border-style:none;
-    border-radius: 4px;
-    outline: none;
-    font-size: 1rem;
+.cartoes {
+  background-color: #fffce6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
 }
-
-.informacoes{
-    background-color: #FFFCE6;
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    align-content:center ;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;  
-}
-.cartoes{
-    background-color: #FFFCE6;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content:space-evenly;
-}
-.card{
-    background-color: #FFFCE6;
-    display: flex;
-    border: none;
+.card {
+  background-color: #fffce6;
+  display: flex;
+  border: none;
 }
 
-.texto-card{
-    color: var(--preto);
-    padding:5px;
+.texto-card {
+  color: var(--preto);
+  padding: 5px;
 }
-.texto-card a{
-    color: var(--amarelo);
+.texto-card a {
+  color: var(--amarelo);
 }
-.separadorHorizontal{
-    width: 100%;
-    margin-top: 30px;
-	border: 0;
-    border-top: 1px dashed var(--preto);
+.separadorHorizontal {
+  width: 100%;
+  margin-top: 30px;
+  border: 0;
+  border-top: 1px dashed var(--preto);
 }
 
 .bloco-precos {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .preco-medio {
-    margin: 20px;
+  margin: 20px;
 }
 
 .preco-medio h1 {
-    margin: 0 auto;
-    width: fit-content;
-    border: solid 3px #506AD4;
-    border-radius: 15px;
-    padding: 6px;
+  margin: 0 auto;
+  width: fit-content;
+  border: solid 3px #506ad4;
+  border-radius: 15px;
+  padding: 6px;
 }
 
 .cards {
-    height: 250px;
-    width: 350px;
-    background-size:cover;
-    background-repeat: no-repeat;
-    margin: 15px;
-    border:  solid 3px #506AD4;
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  height: 250px;
+  width: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px;
+  border: solid 3px #506ad4;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .cards:hover {
-    cursor: pointer;
-    transition: .5s;
-    padding: .5%;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0.5%;
 }
 
 .cards h3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: #506AD4;
-    color: white;
-    margin: 0;
-    border-top-left-radius: 13px;
-    border-bottom-right-radius: 13px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: #506ad4;
+  color: white;
+  margin: 0;
+  border-top-left-radius: 13px;
+  border-bottom-right-radius: 13px;
 }
 
-.cards h2{
-    width: fit-content;
-    height: fit-content;
-    background-color: #506AD4;
-    color: white;
-    border-bottom-right-radius: 13px;
-    border-top-left-radius: 13px;
-    padding: 5px;
+.cards h2 {
+  width: fit-content;
+  height: fit-content;
+  background-color: #506ad4;
+  color: white;
+  border-bottom-right-radius: 13px;
+  border-top-left-radius: 13px;
+  padding: 5px;
 }
 
 .sp {
-    background-image:url(https://www.euandopelomundo.com/wp-content/uploads/2019/04/sao_paulo.jpg);
+  background-image: url(https://www.euandopelomundo.com/wp-content/uploads/2019/04/sao_paulo.jpg);
 }
 
 .rj {
-    background-image: url(https://super.abril.com.br/wp-content/uploads/2017/12/rio-de-janeiro.png?w=1024);
+  background-image: url(https://super.abril.com.br/wp-content/uploads/2017/12/rio-de-janeiro.png?w=1024);
 }
 
 .pr {
-    background-image: url(https://mid.curitiba.pr.gov.br/2020/destaque/00303353.jpg);
+  background-image: url(https://mid.curitiba.pr.gov.br/2020/destaque/00303353.jpg);
 }
 
-footer{
-    box-sizing: border-box;
-    width:100%;
-    height: 14.6vh; 
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 14.6vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    background-color: var(--preto);
-    color: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--preto);
+  color: var(--branco);
 }
 
+@media screen and (max-width: 1180px) and (min-width: 10px) {
+  .bloco-precos {
+    display: block;
+  }
 
+  .preco-medio {
+    width: fit-content;
+  }
 
-@media screen 
- and (max-width: 1180px) 
- and (min-width: 10px)  {
-    .bloco-precos {
-        display: block;
-     }
-
-     .preco-medio {
-         width: fit-content;
-     }
-
-     .cards {
-         width: 90%;
-     }
+  .cards {
+    width: 90%;
+  }
 }
 
-@media(max-widht: 590px) {
+@media screen and (max-width: 575px) and (min-width: 10px) {
+  .selecaoBox {
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+  }
 
-    .formBusca input, select, button {
-        margin: 0 auto;
-    }
-
+  .btnFormBusca {
+    display: block;
+  }
 }
-
-@media screen 
- and (max-width: 575px) 
- and (min-width: 10px) {
-    .selecaoBox {
-        display: none;
-        width: 50%;
-        margin: 0 auto;
-    }
-
-    .btnFormBusca {
-        display: block;
-    }
-
-    .formBusca {
-        padding: 1rem;
-    }
-
- }
