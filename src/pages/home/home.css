@@ -1,5 +1,5 @@
 header {
-  background-color: #506ad4;
+  background-color: #24a3b1;
   font-weight: 700;
 }
 
@@ -12,19 +12,34 @@ header {
   width: 100%;
 }
 .painel {
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5rem;
   width: 100%;
-  background-image: url("https://images7.alphacoders.com/291/291780.jpg");
+  background-image: url(https://i2.wp.com/blogdaengenharia.com/wp-content/uploads/2020/09/2807-scaled.jpg?fit=2560%2C1707&ssl=1);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .titulo {
-  margin: 1% 10%;
-  font-size: clamp(0.2rem, 2.5rem, 3rem);
+  color: #312a2a;
+  margin-bottom: 64px;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+select {
+  margin: 4px;
+  padding: 8px;
+  color: #c4c4c4;
+  border: none;
+}
+
+.btnBusca {
+  text-transform: uppercase;
+  padding: 8px 22px;
+  background-color: #24a3b1;
+  color: #c4c4c4;
+  border: none;
 }
 
 .btnFormBusca {
@@ -34,35 +49,12 @@ header {
   margin: 0 auto;
 }
 
-.btnBusca {
-  background-color: #506ad4;
-  color: white;
-}
-
 .boxActive {
   display: block !important;
 }
 
 .btnOff {
   background-color: #777d97 !important;
-}
-
-.formBusca {
-  text-align: center;
-  border-radius: 3px;
-  margin: 10px;
-  padding: 5rem;
-  background-color: rgba(196, 196, 196, 0.7);
-}
-.formBusca input,
-select,
-button {
-  margin: 0.2rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border-style: none;
-  border-radius: 4px;
-  outline: none;
-  font-size: 1rem;
 }
 
 .informacoes {
@@ -105,18 +97,18 @@ button {
 
 .bloco-precos {
   display: flex;
-  /*flex-direction: row;*/
-  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1300px;
 }
 
 .preco-medio {
-  width: 100%;
+  margin: 20px;
 }
 
 .preco-medio h1 {
   margin: 0 auto;
   width: fit-content;
-  border: solid 3px #24a3b1;
+  border: solid 3px #506ad4;
   border-radius: 15px;
   padding: 6px;
 }
@@ -232,14 +224,6 @@ footer {
   }
 }
 
-@media (max-widht: 590px) {
-  .formBusca input,
-  select,
-  button {
-    margin: 0 auto;
-  }
-}
-
 @media screen and (max-width: 575px) and (min-width: 10px) {
   .selecaoBox {
     display: none;
@@ -249,9 +233,5 @@ footer {
 
   .btnFormBusca {
     display: block;
-  }
-
-  .formBusca {
-    padding: 1rem;
   }
 }
