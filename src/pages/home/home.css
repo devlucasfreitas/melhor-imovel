@@ -1,5 +1,5 @@
 header {
-  background-color: #24a3b1;
+  background-color: #506ad4;
   font-weight: 700;
 }
 
@@ -12,34 +12,19 @@ header {
   width: 100%;
 }
 .painel {
-  padding: 5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  background-image: url(https://i2.wp.com/blogdaengenharia.com/wp-content/uploads/2020/09/2807-scaled.jpg?fit=2560%2C1707&ssl=1);
+  background-image: url("https://images7.alphacoders.com/291/291780.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .titulo {
-  color: #312a2a;
-  margin-bottom: 64px;
-  font-size: 55px;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-
-select {
-  margin: 4px;
-  padding: 8px;
-  color: #c4c4c4;
-  border: none;
-}
-
-.btnBusca {
-  text-transform: uppercase;
-  padding: 8px 22px;
-  background-color: #24a3b1;
-  color: #c4c4c4;
-  border: none;
+  margin: 1% 10%;
+  font-size: clamp(0.2rem, 2.5rem, 3rem);
 }
 
 .btnFormBusca {
@@ -49,12 +34,35 @@ select {
   margin: 0 auto;
 }
 
+.btnBusca {
+  background-color: #506ad4;
+  color: white;
+}
+
 .boxActive {
   display: block !important;
 }
 
 .btnOff {
   background-color: #777d97 !important;
+}
+
+.formBusca {
+  text-align: center;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 5rem;
+  background-color: rgba(196, 196, 196, 0.7);
+}
+.formBusca input,
+select,
+button {
+  margin: 0.2rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-style: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
 }
 
 .informacoes {
@@ -97,29 +105,30 @@ select {
 
 .bloco-precos {
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;*/
+  justify-content: space-between;
 }
 
 .preco-medio {
-  margin: 20px;
+  width: 100%;
 }
 
 .preco-medio h1 {
   margin: 0 auto;
   width: fit-content;
-  border: solid 3px #506ad4;
+  border: solid 3px #24a3b1;
   border-radius: 15px;
   padding: 6px;
 }
 
 .cards {
-  height: 250px;
-  width: 350px;
+  width: 100%;
+
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 15px;
-  border: solid 3px #506ad4;
-  border-radius: 15px;
+
+  margin: 30px;
+
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -127,30 +136,58 @@ select {
 
 .cards:hover {
   cursor: pointer;
-  transition: 0.5s;
-  padding: 0.5%;
 }
 
-.cards h3 {
-  grid-column-start: 2;
-  grid-column-end: 3;
+.cards h4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: #506ad4;
+
+  background-color: #24a3b1;
   color: white;
+
   margin: 0;
-  border-top-left-radius: 13px;
-  border-bottom-right-radius: 13px;
+  padding: 3px 7px 3px 7px;
+
+  font-size: 16px;
 }
 
-.cards h2 {
-  width: fit-content;
-  height: fit-content;
-  background-color: #506ad4;
-  color: white;
-  border-bottom-right-radius: 13px;
-  border-top-left-radius: 13px;
-  padding: 5px;
+.price_card {
+  width: 800px;
+
+  margin-left: -1px;
+  padding: 8px;
+
+  background-color: #94c9d3;
+
+  display: flex;
+  align-items: center;
+}
+
+.price_card p {
+  font-weight: bold;
+  font-size: 17px;
+  color: #24a3b1;
+  text-shadow: rgba(0, 0, 0, 0.3) 5px 10px 10px;
+}
+
+.plus_card {
+  background-color: #94c9d3;
+
+  width: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 10px 10px;
+}
+
+.plus_card p {
+  font-size: 90px;
+  color: #24a3b1;
+  font-weight: lighter;
 }
 
 .sp {
@@ -163,6 +200,9 @@ select {
 
 .pr {
   background-image: url(https://mid.curitiba.pr.gov.br/2020/destaque/00303353.jpg);
+}
+.fl {
+  background-image: url(https://st2.depositphotos.com/4366637/9619/v/600/depositphotos_96194940-stock-video-aerial-view-beach-in-maresias.jpg);
 }
 
 footer {
@@ -192,6 +232,14 @@ footer {
   }
 }
 
+@media (max-widht: 590px) {
+  .formBusca input,
+  select,
+  button {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 575px) and (min-width: 10px) {
   .selecaoBox {
     display: none;
@@ -201,5 +249,9 @@ footer {
 
   .btnFormBusca {
     display: block;
+  }
+
+  .formBusca {
+    padding: 1rem;
   }
 }
