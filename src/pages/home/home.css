@@ -103,6 +103,7 @@ select {
 
 .preco-medio {
   margin: 20px;
+  width: 100%;
 }
 
 .preco-medio h1 {
@@ -162,6 +163,7 @@ select {
   font-size: 17px;
   color: #24a3b1;
   text-shadow: rgba(0, 0, 0, 0.3) 5px 10px 10px;
+  margin: 0;
 }
 
 .plus_card {
@@ -212,15 +214,34 @@ footer {
 
 @media screen and (max-width: 1180px) and (min-width: 10px) {
   .bloco-precos {
-    display: block;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 0;
+    align-items: center;
   }
-
-  .preco-medio {
-    width: fit-content;
-  }
-
   .cards {
     width: 90%;
+    height: 80%;
+  }
+  .price_card {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    height: 50%;
+    justify-content: center;
+  }
+  .plus_card {
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .plus_card p {
+    font-size: 400%;
+    color: #24a3b1;
+    font-weight: lighter;
   }
 }
 
@@ -233,5 +254,38 @@ footer {
 
   .btnFormBusca {
     display: block;
+  }
+  .bloco-precos {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 0;
+    align-items: center;
+  }
+
+  .cards {
+    width: 80%;
+    height: 80%;
+  }
+
+  .price_card {
+    display: flex;
+    width: 80%;
+    height: 50%;
+    margin-right: 0px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .plus_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+    height: 50%;
+
+    margin: auto;
   }
 }
